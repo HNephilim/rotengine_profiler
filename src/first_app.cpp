@@ -1,7 +1,7 @@
 #include "first_app.hpp"
 #include "GLFW/glfw3.h"
-#include "profiler/profiler.hpp"
-#include "window/window.hpp"
+#include <profiler.hpp>
+#include <window.hpp>
 
 namespace rot {
 void FirstApp::run() {

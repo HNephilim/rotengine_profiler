@@ -1,9 +1,9 @@
-#include <app/first_app.hpp>
 #include <cstdlib>
 #include <exception>
+#include <first_app.hpp>
 #include <iostream>
 #include <iterator>
-#include <profiler/profiler.hpp>
+#include <profiler.hpp>
 
 int main(int argc, char *argv[]) {
     PROF_INIT_PROC("Initializing App");
@@ -16,13 +16,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    auto start = std::chrono::steady_clock::now();
     PROF_DUMP_TRACE();
-    auto end = std::chrono::steady_clock::now();
-
-    auto time = end - start;
-
-    std::cout << "Time to save = " << time.count() << '\n';
 
     return 0;
 }

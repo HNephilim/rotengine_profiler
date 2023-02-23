@@ -1,10 +1,5 @@
-bin/
-CMakeFiles/
-build/
-obj/
-RotRenderer.*
+Debug/
+Release/
 .vs/
 .cache/
-compile_commands
 vendor/
-compile_commands.json

@@ -1,6 +1,6 @@
 #include "window.hpp"
 #include "GLFW/glfw3.h"
-#include "profiler/profiler.hpp"
+#include <profiler.hpp>
 #include <string>
 
 namespace rot {

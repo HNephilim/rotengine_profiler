@@ -1,9 +1,9 @@
 #include "pipeline.hpp"
 
-#include "profiler/profiler.hpp"
 #include <fstream>
 #include <ios>
 #include <iostream>
+#include <profiler.hpp>
 #include <stdexcept>
 #include <stdint.h>
 #include <vector>

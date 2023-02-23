@@ -1,7 +1,6 @@
 #pragma once
-#include "pipeline/pipeline.hpp"
-#include "window/window.hpp"
-
+#include <pipeline.hpp>
+#include <window.hpp>
 namespace rot {
 class FirstApp {
   public:

@@ -36,7 +36,7 @@
 
 #include <processthreadsapi.h>
 
-#include "json.hpp"
+#include <json/json.hpp>
 
 namespace _profiler {
 
