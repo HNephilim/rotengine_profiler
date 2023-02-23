@@ -9,6 +9,7 @@
 // Definitions for profiling an application into a Chrome Trace.
 //
 //===----------------------------------------------------------------------===//
+#ifdef TRACY_ENABLE
 
 #include "profiler.hpp"
 #include <fstream>
@@ -16,8 +17,6 @@
 #include <iostream>
 #include <stdint.h>
 #include <stdio.h>
-
-#ifdef GENERIC_PROFILER
 
 #include <algorithm>
 #include <chrono>
