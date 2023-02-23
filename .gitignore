@@ -1,0 +1,10 @@
+bin/
+CMakeFiles/
+build/
+obj/
+RotRenderer.*
+.vs/
+.cache/
+compile_commands
+vendor/
+compile_commands.json
