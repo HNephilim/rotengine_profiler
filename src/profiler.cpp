@@ -9,7 +9,7 @@
 // Definitions for profiling an application into a Chrome Trace.
 //
 //===----------------------------------------------------------------------===//
-#ifdef GENERIC_PROFILER
+#ifdef TRACY_ENABLE
 
 #include "profiler.hpp"
 #include <fstream>
@@ -237,6 +237,17 @@ void dumpTracingFile() {
     assert(std::all_of(process_profiler->threads_profile.begin(), process_profiler->threads_profile.end(),
                        [](const ThreadProfiler &tprof) { return tprof.stack.empty(); }));
 
+    // Counting entries to generate buffer
+    //  Two for process metadata
+    /* uint64_t count = 2; */
+    /* for (const auto &tprof : process_profiler->threads_profile) { */
+    /*     // one for each entry in the thread */
+    /*     count += tprof.entries.size(); */
+    /**/
+    /*     // two for the thread metadata_name */
+    /*     count += 2; */
+    /* } */
+    /**/
     // Start JSON file.
     using json = nlohmann::json;
 
