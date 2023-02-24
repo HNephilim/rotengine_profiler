@@ -7,10 +7,14 @@ project(RotProfiler VERSION 0.1)
 file(GLOB_RECURSE SRC_FILES CONFIGURE_DEPENDS src/*.cpp )
 add_executable(${PROJECT_NAME} main.cpp ${SRC_FILES})
 
-target_include_directories(RotRenderer PUBLIC include/)
+target_include_directories(RotRenderer PUBLIC  include/)
 
 
+#PROFILER
+add_subdirectory(include/tracy)
 
 if(PROFILER)
-    add_compile_definitions(GENERIC_PROFILER)
+    add_compile_definitions(TRACY_ENABLE)
+    target_link_libraries(RotRenderer PUBLIC Tracy::TracyClient)
+    
 endif()

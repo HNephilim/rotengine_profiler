@@ -13,7 +13,7 @@
 #ifndef _GENERIC_PROFILER_H
 #define _GENERIC_PROFILER_H
 
-#ifdef GENERIC_PROFILER
+#ifdef TRACY_ENABLE
 
 #include <limits>
 #include <mutex>
